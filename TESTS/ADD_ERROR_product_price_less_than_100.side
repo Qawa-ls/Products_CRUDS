@@ -1,0 +1,175 @@
+{
+  "id": "c7f20443-9dec-4600-8dc2-168e9ca5bc09",
+  "version": "2.0",
+  "name": "Cas de test",
+  "url": "https://mohamedmamdouh1999.github.io/Products_CRUDS",
+  "tests": [{
+    "id": "b0031ec4-e55e-4a97-a23c-59b8feef1df7",
+    "name": "ADD : FALSE product name Pas de maj sur la 1ere lettre",
+    "commands": [{
+      "id": "e921c8ed-fbb8-428e-8f4d-476c7b0f3c0e",
+      "comment": "",
+      "command": "open",
+      "target": "https://mohamedmamdouh1999.github.io/Products_CRUDS/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5221501f-e123-484b-b956-086e9d2a0942",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1094x1030",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db72a9af-edf1-4e78-90b0-effdbc35ab1b",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//input[@id='inputName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6dfe111-22a6-4465-ab8b-93e4b129cceb",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//input[@id='inputName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "7d597679-c354-49ec-b057-4108050ba968",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnAdd",
+      "targets": [
+        ["id=btnAdd", "id"],
+        ["css=#btnAdd", "css:finder"],
+        ["xpath=//button[@id='btnAdd']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1690ee6-2684-4a24-a421-396632259525",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=alertName",
+      "targets": [
+        ["id=alertName", "id"],
+        ["css=#alertName", "css:finder"],
+        ["xpath=//div[@id='alertName']", "xpath:attributes"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": "This Name Is Not Valid\\nExample: Mi 9T"
+    }]
+  }, {
+    "id": "2ac276dc-697c-4c7b-ab66-1f1d1f92ea1e",
+    "name": "ADD ERROR : product price less than 100",
+    "commands": [{
+      "id": "cf05785e-0987-405c-9313-c4df5f778375",
+      "comment": "",
+      "command": "open",
+      "target": "https://mohamedmamdouh1999.github.io/Products_CRUDS/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c3b0f29-035e-4ffd-ab50-e4c19d159a84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1094x1030",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab041e7b-f58e-456b-84b5-eb5fb2a66822",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//input[@id='inputName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b26486fa-d3b0-4423-94bc-fea8372d7e3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputName",
+      "targets": [
+        ["id=inputName", "id"],
+        ["css=#inputName", "css:finder"],
+        ["xpath=//input[@id='inputName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "a9be0cfd-04e3-40a1-a0d9-f2e8d9babcd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputPrice",
+      "targets": [
+        ["id=inputPrice", "id"],
+        ["css=#inputPrice", "css:finder"],
+        ["xpath=//input[@id='inputPrice']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22644096-1899-4ef2-a90a-9660c755e71b",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPrice",
+      "targets": [
+        ["id=inputPrice", "id"],
+        ["css=#inputPrice", "css:finder"],
+        ["xpath=//input[@id='inputPrice']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "301465e2-2f2d-40d7-bd22-3dda50617987",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnAdd",
+      "targets": [
+        ["id=btnAdd", "id"],
+        ["css=#btnAdd", "css:finder"],
+        ["xpath=//button[@id='btnAdd']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3cee550-3a86-4fd4-9f30-e67c710a4ba2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=alertPrice",
+      "targets": [
+        ["id=alertPrice", "id"],
+        ["css=#alertPrice", "css:finder"],
+        ["xpath=//div[@id='alertPrice']", "xpath:attributes"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "This Price Is Not Valid\\nExample: 1000"
+    }]
+  }],
+  "suites": [{
+    "id": "a2dfcf88-414e-434b-9992-0bde64e0c007",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://mohamedmamdouh1999.github.io/", "https://mohamedmamdouh1999.github.io/Products_CRUDS"],
+  "plugins": []
+}
