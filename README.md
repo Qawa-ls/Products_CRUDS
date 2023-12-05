@@ -1,11 +1,11 @@
 # Products_CRUDS
 Product is a system for saving products that you can quickly revisit later.
 
-Regle de gestion
+ # Regle de gestion #
 
 Il s'agit ici de tester l'intégration d'un appareil informatique dans une base de données via des caractéristiques spécifiques.
 
-
+Tous Les fichiers .side sont uploads dans le dossiers TESTS.
 
 TESTS : ADD
 - ADD_ERROR_product_name_Pas_de_caractères_spé
@@ -25,4 +25,5 @@ TESTS : MODIFICATION
 BY MohamedMamdouh1999
 
 
-Hugo CAPOLUNGHI
+Hugo CAPOLUNGHI 
+Guillaume RE
